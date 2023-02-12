@@ -18,29 +18,15 @@
 
 header {
     background-color: var(--secondary-bg-color);
-    padding-top: 35px;
+    padding-top: 65px;
 }
 
-.navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 24px;
-}
-
-.hamburger {
-    width: 150px;
-    margin-left: 800px;
+.fa-bars {
+    font-size: 40px;
     cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 5px auto;
-    background-color: var(--main-bg-color)
+    position: absolute;
+    right: 40px;
+    top: 15px;
 }
 
 .logo {
@@ -50,8 +36,14 @@ header {
     left: 0.2%;
 }
 
-@media(max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+.sticker {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    left: 150px;
+    top: 150px;
+    background: linear-gradient(180deg, rgba(51, 255, 0, 0.77) 39.66%, rgba(51, 255, 0, 0) 100%);
+    border: 8px solid #000000;
+    border-radius: 5px;
+    transform: rotate(-7.5deg);
 }
