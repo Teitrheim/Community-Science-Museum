@@ -1,0 +1,57 @@
+:root {
+    --main-text-color: #000;
+    --main-bg-color: #fff;
+    --secondary-bg-color: #FF6787;
+    --main-text-size: 16px;
+    --secondary-text-size: 20px;
+    --main-font-family: Andika;
+    --secondary-font-family: Comic Sans MS;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: var(--main-font-family)
+}
+
+header {
+    background-color: var(--secondary-bg-color);
+    padding-top: 35px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.hamburger {
+    width: 150px;
+    margin-left: 800px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: var(--main-bg-color)
+}
+
+.logo {
+    max-width: 450px;
+    position: absolute;
+    top: 1%;
+    left: 0.2%;
+}
+
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
