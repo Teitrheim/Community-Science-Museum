@@ -91,7 +91,7 @@ article {
 
 @media (min-width: 481px) and (max-width: 751px) {
     .skull {
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     article {
@@ -109,7 +109,7 @@ article {
     }
 
     .skull {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .cta-button {
@@ -123,7 +123,7 @@ article {
     }
 
     .skull {
-        padding-top: 140px;
+        padding-top: 100px;
     }
 
     .cta-button {
