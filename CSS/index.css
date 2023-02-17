@@ -35,7 +35,7 @@ header {
 
 }
 
-.openIcon {
+.hamburger {
     max-width: 10%;
     position: fixed;
     top: 3.5%;
@@ -43,7 +43,7 @@ header {
 }
 
 .skull {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 img {
@@ -97,25 +97,37 @@ article {
     article {
         font-size: 16px;
     }
-}
 
-@media (min-width: 751) and (max-width: 1024px) {
-    .skull {
-        padding-top: 80px;
-    }
-
-    article {
-        font-size: 18px;
+    .cta-button {
+        width: 200px;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 752) and (max-width: 1024px) {
     article {
         font-size: 20px;
     }
 
     .skull {
         padding-top: 100px;
+    }
+
+    .cta-button {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    article {
+        font-size: 24px;
+    }
+
+    .skull {
+        padding-top: 140px;
+    }
+
+    .cta-button {
+        width: 300px;
     }
 }
 
@@ -126,5 +138,9 @@ article {
 
     .skull {
         padding-top: 120px;
+    }
+
+    .cta-button {
+        width: 350px;
     }
 }
