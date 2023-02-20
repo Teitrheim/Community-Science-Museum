@@ -51,13 +51,19 @@ svg,
     color: var(--main-text-color)
 }
 
-.skull {
+/*homepage*/
+
+.skull,
+.lab {
     padding-top: 40px;
 }
 
 .simulator,
 .learn,
-.mammoth {
+.mammoth,
+.volunteer,
+.staff,
+.contact {
     width: 80%;
     padding-left: 25%;
     padding-top: 5%;
@@ -66,7 +72,9 @@ svg,
 
 .text-1,
 .text-2,
-.text-3 {
+.text-3,
+.job,
+.ourStaff {
     gap: 1px;
     margin: 10px 20px;
 }
@@ -74,6 +82,8 @@ svg,
 .text-1,
 .text-2,
 .text-3,
+.job,
+.ourStaff,
 img {
     width: auto;
 }
@@ -82,7 +92,9 @@ img {
 .button-wrapper,
 .text-1,
 .text-2,
-.text-3 {
+.text-3,
+.job,
+.ourStaff {
     text-align: center;
 }
 
@@ -91,12 +103,7 @@ img {
     margin-top: 20px;
 }
 
-.button-wrapper,
-.text-1,
-.text-2,
-.text-3 {
-    padding-left: 5%;
-}
+/*footer*/
 
 .footer-wrapper {
     gap: 20px;
@@ -107,14 +114,17 @@ img {
 .footer-wrapper,
 .text-1,
 .text-2,
-.text-3 {
+.text-3,
+.job,
+.ourStaff {
     flex-direction: column;
 }
 
 .cta-button,
 .cta-footer-1,
 .cta-footer-2,
-.cta-footer-3 {
+.cta-footer-3,
+.cta-buttonA {
     border: none;
     display: inline-block;
     font-family: var(--main-font-family);
@@ -147,12 +157,14 @@ footer,
 }
 
 footer,
-img {
+img,
+.lab {
     height: auto;
 }
 
 header,
-footer {
+footer,
+.lab {
     width: 100%;
 }
 
@@ -179,56 +191,100 @@ header,
     margin-left: 20px;
 }
 
+/*about page*/
 
+h1 {
+    font-family: var(--secondary-font-family);
+    padding: 20px;
+}
+
+.cta-buttonA {
+    margin: 15px;
+}
+
+/*contact page*/
+
+.open {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.contact {
+    margin: 10px;
+    padding-left: 15%;
+}
+
+/*form*/
+
+.form__a {
+    margin-top: 110px;
+    margin-left: 80px;
+    color: var(--main-text-color);
+}
 
 
 @media (min-width: 481px) and (max-width: 751px) {
-    .skull {
+
+    .skull,
+    .lab {
         padding-top: 50px;
     }
 
-    article {
+    article,
+    .job,
+    .ourStaff {
         font-size: 16px;
     }
 
     .cta-button,
     .cta-footer-1,
     .cta-footer-2,
-    .cta-footer-3 {
+    .cta-footer-3,
+    .cta-buttonA {
         width: 160px;
     }
 }
 
 @media (min-width: 752) and (max-width: 1024px) {
-    article {
+
+    article,
+    .job,
+    .ourStaff {
         font-size: 20px;
     }
 
-    .skull {
+    .skull,
+    .lab {
         padding-top: 80px;
     }
 
     .cta-button,
     .cta-footer-1,
     .cta-footer-2,
-    .cta-footer-3 {
+    .cta-footer-3,
+    .cta-buttonA {
         width: 250px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    article {
+
+    article,
+    .job,
+    .ourStaff {
         font-size: 24px;
     }
 
-    .skull {
+    .skull,
+    .lab {
         padding-top: 80px;
     }
 
     .cta-button,
     .cta-footer-1,
     .cta-footer-2,
-    .cta-footer-3 {
+    .cta-footer-3,
+    .cta-buttonA {
         width: 300px;
     }
 
@@ -242,18 +298,23 @@ header,
 }
 
 @media (min-width: 1281px) {
-    article {
+
+    article,
+    .job,
+    .ourStaff {
         font-size: 26px;
     }
 
-    .skull {
+    .skull,
+    .lab {
         padding-top: 70px;
     }
 
     .cta-button,
     .cta-footer-1,
     .cta-footer-2,
-    .cta-footer-3 {
+    .cta-footer-3,
+    .cta-buttonA {
         width: 350px;
         height: 56px;
     }
