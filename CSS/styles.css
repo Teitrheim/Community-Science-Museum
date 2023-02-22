@@ -2,6 +2,8 @@
     --main-text-color: #000;
     --main-bg-color: #fff;
     --secondary-bg-color: #FF6787;
+    --third-bg-color: #62FF3B;
+    --fourth-bg-color: #FF862F;
     --main-text-size: 14px;
     --secondary-text-size: 20px;
     --main-font-family: Andika;
@@ -23,7 +25,7 @@ img {
 
 header {
     max-height: 100%;
-    background-color: #FF6787;
+    background-color: var(--secondary-bg-color);
 }
 
 .logo,
@@ -54,7 +56,8 @@ svg,
 /*homepage*/
 
 .skull,
-.lab {
+.lab,
+.support_us {
     padding-top: 40px;
 }
 
@@ -68,7 +71,6 @@ svg,
     padding-left: 25%;
     padding-top: 5%;
 }
-
 
 .text-1,
 .text-2,
@@ -84,7 +86,8 @@ svg,
 .text-3,
 .job,
 .ourStaff,
-img {
+img,
+.ball {
     width: auto;
 }
 
@@ -94,7 +97,10 @@ img {
 .text-2,
 .text-3,
 .job,
-.ourStaff {
+.ourStaff,
+.support__h1,
+.send__button,
+.open {
     text-align: center;
 }
 
@@ -107,8 +113,12 @@ img {
 
 .footer-wrapper {
     gap: 20px;
-    align-items: center;
     padding-top: 65px;
+}
+
+.footer-wrapper,
+.form__a {
+    align-items: center;
 }
 
 .footer-wrapper,
@@ -116,7 +126,8 @@ img {
 .text-2,
 .text-3,
 .job,
-.ourStaff {
+.ourStaff,
+.form__a {
     flex-direction: column;
 }
 
@@ -124,16 +135,26 @@ img {
 .cta-footer-1,
 .cta-footer-2,
 .cta-footer-3,
-.cta-buttonA {
+.cta-buttonA,
+.cta-button__menu {
     border: none;
     display: inline-block;
     font-family: var(--main-font-family);
     padding: 8px;
     font-size: 16px;
     text-decoration: none;
-    background-color: #62FF3B;
+    background-color: var(--third-bg-color);
     width: 160px;
     height: 48px;
+}
+
+.send__button {
+    margin: 20px;
+}
+
+.send__button,
+.form__a {
+    color: var(--main-text-color);
 }
 
 .cta-footer-1 {
@@ -158,13 +179,16 @@ footer,
 
 footer,
 img,
-.lab {
+.lab,
+.statement {
     height: auto;
 }
 
 header,
 footer,
-.lab {
+.lab,
+.full__access,
+.statement {
     width: 100%;
 }
 
@@ -183,7 +207,8 @@ header,
 .text-1,
 .text-2,
 .text-3,
-.footer-wrapper {
+.footer-wrapper,
+.form__a {
     display: flex;
 }
 
@@ -193,8 +218,8 @@ header,
 
 /*about page*/
 
-h1 {
-    font-family: var(--secondary-font-family);
+h1,
+.form__input__large {
     padding: 20px;
 }
 
@@ -205,7 +230,6 @@ h1 {
 /*contact page*/
 
 .open {
-    text-align: center;
     padding: 10px 10px;
 }
 
@@ -214,19 +238,60 @@ h1 {
     padding-left: 15%;
 }
 
-/*form*/
+/*contact page form*/
 
 .form__a {
-    margin-top: 110px;
-    margin-left: 80px;
-    color: var(--main-text-color);
+    margin-top: 110px 0px 0px 80px;
 }
 
+.form__input__large {
+    width: 200px;
+
+}
+
+/*Support page*/
+
+.full__access {
+    margin: 20px 20px 20px 0px;
+    height: 650px;
+    background: linear-gradient(230.65deg, rgba(62, 248, 15, 0.73) 59.97%, rgba(255, 192, 205, 0) 100%);
+    border-radius: 10px
+}
+
+
+.full__access h1,
+h1 {
+    font-family: var(--secondary-font-family);
+}
+
+/*Menu*/
+
+.ham-menu {
+    background: linear-gradient(230.65deg, rgba(62, 248, 15, 0.73) 59.97%, rgba(255, 192, 205, 0) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 120px;
+    padding: 180px 10px;
+    font-size: x-large;
+}
+
+.cta-button__menu {
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    margin: auto;
+}
+
+.footer__menu {
+    background-color: var(--secondary-bg-color);
+    border-radius: 0%;
+}
 
 @media (min-width: 481px) and (max-width: 751px) {
 
     .skull,
-    .lab {
+    .lab,
+    .support_us {
         padding-top: 50px;
     }
 
@@ -240,7 +305,9 @@ h1 {
     .cta-footer-1,
     .cta-footer-2,
     .cta-footer-3,
-    .cta-buttonA {
+    .cta-buttonA,
+    .send__button,
+    .cta-button__menu {
         width: 160px;
     }
 }
@@ -254,7 +321,8 @@ h1 {
     }
 
     .skull,
-    .lab {
+    .lab,
+    .support_us {
         padding-top: 80px;
     }
 
@@ -262,7 +330,9 @@ h1 {
     .cta-footer-1,
     .cta-footer-2,
     .cta-footer-3,
-    .cta-buttonA {
+    .cta-buttonA,
+    .send__button,
+    .cta-button__menu {
         width: 250px;
     }
 }
@@ -276,7 +346,8 @@ h1 {
     }
 
     .skull,
-    .lab {
+    .lab,
+    .support_us {
         padding-top: 80px;
     }
 
@@ -284,7 +355,9 @@ h1 {
     .cta-footer-1,
     .cta-footer-2,
     .cta-footer-3,
-    .cta-buttonA {
+    .cta-buttonA,
+    .send__button,
+    .cta-button__menu {
         width: 300px;
     }
 
@@ -306,7 +379,8 @@ h1 {
     }
 
     .skull,
-    .lab {
+    .lab,
+    .support_us {
         padding-top: 70px;
     }
 
@@ -314,7 +388,9 @@ h1 {
     .cta-footer-1,
     .cta-footer-2,
     .cta-footer-3,
-    .cta-buttonA {
+    .cta-buttonA,
+    .send__button,
+    .cta-button__menu {
         width: 350px;
         height: 56px;
     }
