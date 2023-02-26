@@ -25,6 +25,7 @@ img {
 
 header {
     max-height: 100%;
+    z-index: 1000;
 }
 
 .logo,
@@ -48,7 +49,11 @@ svg,
 .cta-button,
 .cta-footer-1,
 .cta-footer-2,
-.cta-footer-3 {
+.cta-footer-3,
+.send__button,
+.form__a,
+.cta-button__menu,
+.ham-menu a {
     color: var(--main-text-color)
 }
 
@@ -59,6 +64,26 @@ svg,
 .support_us {
     padding-top: 40px;
 }
+
+.sticker {
+    margin-top: 70px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(51, 255, 0, 0.77) 39.66%, rgba(51, 255, 0, 0) 100%);
+    border: 8px solid #000000;
+    border-radius: 5px;
+    transform: rotate(-7.5deg);
+}
+
+.sticker,
+.ham-menu {
+    font-size: xx-large;
+}
+
+.sticker,
+.media {
+    justify-content: center;
+}
+
 
 .simulator,
 .learn,
@@ -151,7 +176,6 @@ img {
     font-family: var(--main-font-family);
     padding: 8px;
     font-size: 16px;
-    text-decoration: none;
     background-color: var(--third-bg-color);
     width: 160px;
     height: 48px;
@@ -159,11 +183,6 @@ img {
 
 .send__button {
     margin: 20px;
-}
-
-.send__button,
-.form__a {
-    color: var(--main-text-color);
 }
 
 .cta-footer-1 {
@@ -195,7 +214,8 @@ img,
 header,
 footer,
 .lab,
-.full__access {
+.full__access,
+.sticker {
     width: 100%;
 }
 
@@ -204,7 +224,6 @@ footer,
 }
 
 .media {
-    justify-content: center;
     gap: 27px;
     padding-top: 80px;
 }
@@ -216,7 +235,8 @@ header,
 .text-3,
 .footer-wrapper,
 .form__a,
-.ham-menu {
+.ham-menu,
+.sticker {
     display: flex;
 }
 
@@ -278,17 +298,18 @@ h1 {
 .ham-menu {
     gap: 120px;
     padding: 180px 10px;
-    font-size: xx-large;
-    text-decoration: none;
 }
 
-.ham-menu a {
-    text-decoration: none;
-}
-
+.ham-menu a,
+.ham-menu,
+.cta-button,
+.cta-footer-1,
+.cta-footer-2,
+.cta-footer-3,
+.cta-buttonA,
 .cta-button__menu,
-.ham-menu a {
-    color: var(--main-text-color);
+.send__button {
+    text-decoration: none;
 }
 
 .cta-button__menu {
@@ -310,12 +331,23 @@ header {
     padding: 80px;
 }
 
+@media (min-width: 1px) and (max-width: 480px) {
+    .sticker {
+        display: none;
+    }
+}
+
+
 @media (min-width: 481px) and (max-width: 751px) {
 
     .skull,
     .lab,
     .support_us {
         padding-top: 50px;
+    }
+
+    .sticker {
+        display: none;
     }
 
     article,
@@ -341,6 +373,10 @@ header {
     .job,
     .ourStaff {
         font-size: 20px;
+    }
+
+    .sticker {
+        display: none;
     }
 
     .skull,
