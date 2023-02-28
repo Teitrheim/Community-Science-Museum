@@ -57,6 +57,10 @@ svg,
     color: var(--main-text-color)
 }
 
+.skull {
+    margin-top: 80px;
+}
+
 /*homepage*/
 
 .lab,
@@ -79,7 +83,10 @@ svg,
 .mammoth,
 .volunteer,
 .staff,
-.contact {
+.contact,
+.ball,
+.wheel,
+.atom {
     width: 80%;
     padding-left: 20%;
     padding-top: 5%;
@@ -196,7 +203,8 @@ img,
 header,
 footer,
 .lab,
-.full__access {
+.full__access,
+.wheel {
     width: 100%;
 }
 
@@ -271,8 +279,6 @@ h1 {
 }
 
 
-
-
 /*Menu*/
 
 .ham-menu {
@@ -310,10 +316,19 @@ header {
     padding: 80px;
 }
 
+@media (min-width: 181px) and (max-width: 480px) {
+    .skull {
+        margin-top: 50px;
+    }
+}
+
 
 @media (min-width: 481px) and (max-width: 751px) {
 
-    .skull,
+    .skull {
+        margin-top: 50px;
+    }
+
     .lab,
     .support_us {
         padding-top: 50px;
@@ -344,7 +359,7 @@ header {
         font-size: 20px;
     }
 
-    .skull,
+
     .lab,
     .support_us {
         padding-top: 80px;
@@ -363,13 +378,14 @@ header {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
+
     article,
     .job,
     .ourStaff {
         font-size: 24px;
     }
 
-    .skull,
+
     .lab,
     .support_us {
         padding-top: 80px;
@@ -402,7 +418,7 @@ header {
         font-size: 26px;
     }
 
-    .skull,
+
     .lab,
     .support_us {
         padding-top: 70px;
