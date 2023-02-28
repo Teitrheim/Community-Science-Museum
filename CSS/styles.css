@@ -26,6 +26,7 @@ img {
 header {
     max-height: 100%;
     z-index: 1000;
+    position: fixed;
 }
 
 .logo,
@@ -38,10 +39,7 @@ header {
     max-width: 10%;
     top: 3.5%;
     right: 5%;
-}
-
-.hamburger,
-header {
+    z-index: 1000;
     position: fixed;
 }
 
@@ -59,27 +57,16 @@ svg,
 
 /*homepage*/
 
-.skull,
 .lab,
 .support_us {
     padding-top: 40px;
 }
 
-.sticker {
-    margin-top: 70px;
-    height: 80px;
-    background: linear-gradient(180deg, rgba(51, 255, 0, 0.77) 39.66%, rgba(51, 255, 0, 0) 100%);
-    border: 8px solid #000000;
-    border-radius: 5px;
-    transform: rotate(-7.5deg);
-}
 
-.sticker,
 .ham-menu {
     font-size: xx-large;
 }
 
-.sticker,
 .media {
     justify-content: center;
 }
@@ -214,8 +201,7 @@ img,
 header,
 footer,
 .lab,
-.full__access,
-.sticker {
+.full__access {
     width: 100%;
 }
 
@@ -235,8 +221,7 @@ header,
 .text-3,
 .footer-wrapper,
 .form__a,
-.ham-menu,
-.sticker {
+.ham-menu {
     display: flex;
 }
 
@@ -331,12 +316,6 @@ header {
     padding: 80px;
 }
 
-@media (min-width: 1px) and (max-width: 480px) {
-    .sticker {
-        display: none;
-    }
-}
-
 
 @media (min-width: 481px) and (max-width: 751px) {
 
@@ -344,10 +323,6 @@ header {
     .lab,
     .support_us {
         padding-top: 50px;
-    }
-
-    .sticker {
-        display: none;
     }
 
     article,
@@ -373,10 +348,6 @@ header {
     .job,
     .ourStaff {
         font-size: 20px;
-    }
-
-    .sticker {
-        display: none;
     }
 
     .skull,
