@@ -25,8 +25,12 @@ img {
 
 header {
     max-height: 100%;
-    z-index: 1000;
+}
+
+header,
+.hamburger {
     position: fixed;
+    z-index: 1000;
 }
 
 .logo,
@@ -39,8 +43,6 @@ header {
     max-width: 10%;
     top: 3.5%;
     right: 5%;
-    z-index: 1000;
-    position: fixed;
 }
 
 svg,
@@ -77,18 +79,10 @@ svg,
 .mammoth,
 .volunteer,
 .staff,
-.contact,
-.atom,
-.ball,
-.wheel {
+.contact {
     width: 80%;
-    padding-left: 25%;
+    padding-left: 20%;
     padding-top: 5%;
-}
-
-.atom,
-.ball {
-    padding-left: 1%;
 }
 
 .text-1,
@@ -96,6 +90,7 @@ svg,
 .text-3,
 .job,
 .ourStaff {
+    padding: 10px;
     gap: 1px;
     margin: 10px 20px;
 }
@@ -281,8 +276,7 @@ h1 {
 /*Menu*/
 
 .ham-menu {
-    gap: 120px;
-    padding: 180px 10px;
+    padding: 50px 10px;
 }
 
 .ham-menu a,
