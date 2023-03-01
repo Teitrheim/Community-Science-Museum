@@ -25,7 +25,6 @@ img {
 
 header {
     position: fixed;
-    display: flex;
     justify-content: space-around;
     max-height: 100%;
     z-index: 1000;
@@ -38,7 +37,7 @@ header {
 }
 
 .hamburger {
-    height: 50px;
+    height: 100px;
     width: 100px;
 }
 
@@ -59,18 +58,21 @@ svg,
 .send__button:hover,
 .form__a:hover,
 .cta-button__menu:hover,
-.cta-buttonA:hover {
-    color: var(--main-bg-color);
-    border: 1px solid var(--main-text-color);
+.cta-buttonA:hover,
+.form__a:hover {
     background: var(--secondary-bg-color);
-    transition: 0.5s;
 }
 
 .cta-footer-1:hover,
 .cta-footer-2:hover,
 .cta-footer-3:hover,
 .cta-button__menu:hover,
-.send__button:hover {
+.send__button:hover,
+.cta:hover,
+.cta-button:hover,
+.send__button:hover,
+.cta-button__menu:hover,
+.cta-buttonA:hover {
     color: var(--main-bg-color);
     border: 1px solid var(--main-text-color);
     transition: 0.5s;
@@ -78,7 +80,6 @@ svg,
 }
 
 .skull {
-    width: 100%;
     margin-top: 80px;
 }
 
@@ -230,7 +231,8 @@ footer,
 .lab,
 .full__access,
 .wheel,
-.support_us {
+.support_us,
+.skull {
     width: 100%;
 }
 
@@ -250,7 +252,8 @@ header,
 .text-3,
 .footer-wrapper,
 .form__a,
-.ham-menu {
+.ham-menu,
+header {
     display: flex;
 }
 
@@ -356,7 +359,7 @@ header {
 @media (min-width: 481px) and (max-width: 751px) {
 
     .skull {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     .lab,
