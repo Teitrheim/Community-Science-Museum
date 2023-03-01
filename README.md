@@ -1,6 +1,6 @@
 # Community-Science-Museum
 
-my first semester project
+my first semester project. confusing but fun... 
 
 ## Subheader
 
