@@ -24,21 +24,51 @@ img {
 }
 
 header {
+    width: 100%;
+    height: auto;
     position: fixed;
-    justify-content: space-around;
-    max-height: 100%;
     z-index: 1000;
 }
 
 .logo,
 .mini-logo {
     width: 75%;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: var(--main-text-color);
+    padding: 10px 20px;
 
 }
 
-.hamburger {
-    height: 100px;
-    width: 100px;
+.fa-bars {
+    cursor: pointer;
+    font-size: 50px;
+    padding: 60px 40px;
+}
+
+nav {
+    height: auto;
+    padding: 10px;
+    margin: 80px 30px 0px 0px;
+    position: absolute;
+    background: #62FF3B;
+    top: 0px;
+    right: 20px;
+    font-size: 50px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+#menu-checkbox:checked~nav {
+    display: block;
 }
 
 svg,
@@ -120,6 +150,12 @@ svg,
 
 .text-1,
 .text-2,
+.text-3 {
+    line-height: 2rem;
+}
+
+.text-1,
+.text-2,
 .text-3,
 .job,
 .ourStaff {
@@ -187,7 +223,7 @@ img {
 .cta-button__menu,
 .send__button {
     border: none;
-    display: inline-block;
+    display: inline;
     font-family: var(--main-font-family);
     padding: 8px;
     font-size: 16px;
@@ -346,12 +382,16 @@ header {
 
 @media (min-width: 181px) and (max-width: 480px) {
     .skull {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
-    .hamburger {
-        height: 50px;
-        width: 50px;
+    .logo {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -362,14 +402,13 @@ header {
         margin-top: 90px;
     }
 
+    .logo {
+        width: 100%;
+    }
+
     .lab,
     .support_us {
         padding-top: 50px;
-    }
-
-    .hamburger {
-        height: 100px;
-        width: 100px;
     }
 
     article,
@@ -387,6 +426,11 @@ header {
     .cta-button__menu {
         width: 160px;
     }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (min-width: 752) and (max-width: 1024px) {
@@ -397,9 +441,13 @@ header {
         font-size: 20px;
     }
 
-    .hamburger {
-        height: 100px;
-        width: 100px;
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav a {
+        display: inline;
     }
 
 
@@ -445,12 +493,7 @@ header {
     }
 
     .logo {
-        width: 50%;
-    }
-
-    .hamburger {
-        height: 100px;
-        width: 100px;
+        width: 80%;
     }
 }
 
@@ -461,6 +504,8 @@ header {
     .ourStaff {
         font-size: 26px;
     }
+
+
 
 
     .lab,
@@ -480,11 +525,6 @@ header {
     }
 
     .logo {
-        width: 50%;
-    }
-
-    .hamburger {
-        height: 100px;
-        width: 100px;
+        width: 80%;
     }
 }
