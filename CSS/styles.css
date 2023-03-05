@@ -24,8 +24,8 @@ img {
 }
 
 header {
-    width: 100%;
-    height: auto;
+    height: 125px;
+    padding-bottom: 1em;
     position: fixed;
     z-index: 1000;
 }
@@ -41,34 +41,33 @@ nav,
 }
 
 nav a {
-    text-decoration: none;
-    display: block;
-    color: var(--main-text-color);
     padding: 10px 20px;
 
 }
 
 .fa-bars {
     cursor: pointer;
-    font-size: 50px;
     padding: 60px 40px;
 }
 
+.fa-bars,
 nav {
-    height: auto;
-    padding: 10px;
+    font-size: 40px;
+}
+
+nav {
     margin: 80px 30px 0px 0px;
     position: absolute;
     background: #62FF3B;
-    top: 0px;
-    right: 20px;
-    font-size: 50px;
+    top: 45px;
+    right: 10px;
     border-radius: 10px;
     opacity: 0.8;
 }
 
-#menu-checkbox:checked~nav {
-    display: block;
+.hamburger-icon {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 svg,
@@ -79,7 +78,8 @@ svg,
 .send__button,
 .form__a,
 .cta-button__menu,
-.ham-menu a {
+.ham-menu a,
+nav a {
     color: var(--main-text-color);
 }
 
@@ -159,9 +159,17 @@ svg,
 .text-3,
 .job,
 .ourStaff {
-    padding: 10px;
     gap: 1px;
     margin: 10px 20px;
+}
+
+.text-1,
+.text-2,
+.text-3,
+.job,
+.ourStaff,
+nav {
+    padding: 10px;
 }
 
 .text-1,
@@ -252,13 +260,16 @@ footer {
 }
 
 footer,
-.button-wrapper {
+.button-wrapper,
+#menu-checkbox:checked~nav,
+nav a {
     display: block;
 }
 
 footer,
 img,
-.lab {
+.lab,
+nav {
     height: auto;
 }
 
@@ -268,7 +279,8 @@ footer,
 .full__access,
 .wheel,
 .support_us,
-.skull {
+.skull,
+header {
     width: 100%;
 }
 
@@ -288,8 +300,7 @@ header,
 .text-3,
 .footer-wrapper,
 .form__a,
-.ham-menu,
-header {
+.ham-menu {
     display: flex;
 }
 
@@ -357,7 +368,8 @@ h1 {
 .cta-footer-3,
 .cta-buttonA,
 .cta-button__menu,
-.send__button {
+.send__button,
+nav a {
     text-decoration: none;
 }
 
@@ -391,7 +403,17 @@ header {
 
     header {
         width: 100%;
-        height: auto;
+        height: 80px;
+    }
+
+    .hamburger-icon i {
+        font-size: 25px;
+        margin-top: -1em;
+    }
+
+    nav {
+        top: 5px;
+        right: -5px;
     }
 }
 
@@ -399,7 +421,7 @@ header {
 @media (min-width: 481px) and (max-width: 751px) {
 
     .skull {
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     .logo {
@@ -429,8 +451,14 @@ header {
 
     header {
         width: 100%;
-        height: auto;
+        height: 80px;
     }
+
+    .hamburger-icon i {
+        font-size: 25px;
+        margin-top: -2.5em;
+    }
+
 }
 
 @media (min-width: 752) and (max-width: 1024px) {
@@ -465,6 +493,7 @@ header {
     .cta-button__menu {
         width: 250px;
     }
+
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
