@@ -1,70 +1,57 @@
-# Your project title
+# Community Science Museum Project
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](/images/4.science%20museum%20desktop_2_11zon.png)
 
-A simple overview of the use/purpose of the project.
+Overview
+In this semester project, I undertook the challenge of creating an interactive science museum called the Community Science Museum. The primary focus was on engaging primary and middle school children (ages 7-15) and families. This project served as a culmination of my first-semester curriculum, showcasing both my design and coding skills.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Design Process
+Inspiration and Colors
+I began by researching museum layouts and drawing inspiration from popular museums worldwide. Opting for a child-friendly approach, I chose playful pink and green colors. The Trello board played a pivotal role in maintaining a structured workflow throughout the design and development phases.
 
-You can add some bullet points if you'd like to:
+Construction Phase
+Responsive Design
+I took a mobile-first approach during the design phase, ensuring responsiveness across devices. Utilizing CSS flex properties significantly improved the overall layout, making the website accessible and visually appealing.
 
-- List item 1
-- List item 2
-- List item 3
+Challenges and Learning
+While constructing the site, I encountered challenges with the hamburger menu. Collaborating with classmates and referring to module resources helped resolve issues. The project provided a valuable learning experience, particularly in making CSS DRY and effectively using flex.
+
+Implementation Phase
+Version Control and Deployment
+I maintained version control through a private GitHub repository, deploying the site on Netlify. Regular testing using Wave and W3 validator ensured a high standard of accessibility and code quality.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+Figma
+HTML and CSS
 
 ## Getting Started
 
-### Installing
+git clone [repository-url]
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
 npm install
-```
 
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
 npm run start
-```
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you're interested in contributing to the Community Science Museum project, please follow these guidelines:
+
+Fork the repository.
+Create a new branch for your feature or bug fix: git checkout -b feature/new-feature.
+Make your changes and commit them: git commit -m 'Add new feature'.
+Push your changes to the forked repository: git push origin feature/new-feature.
+Open a pull request, and describe the changes you've made.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Feel free to reach out to me for any questions or collaboration opportunities. You can find me on:
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+teitrheim@gmail.com
+LinkedIn
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+Special thanks to iconify, unsplash, Google Fonts, Font Awesome, Pixabay, and the helpful guidance from my class and teachers.
