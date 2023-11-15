@@ -29,7 +29,7 @@ HTML and CSS
 
 ## Getting Started
 
-git clone [repository-url]
+$ git clone https://github.com/Teitrheim/Community-Science-Museum.git 
 
 npm install
 
