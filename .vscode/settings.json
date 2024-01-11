@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
   "editor.formatOnSave": true
+=======
+  "liveServer.settings.port": 5501
+>>>>>>> 03ef0a6b85913917ffb8998178596afe3d33a358
 }
