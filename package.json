@@ -11,5 +11,11 @@
     "test-unit": "jest",
     "test-e2e": "cypress open",
     "test-e2e-cli": "cypress run"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/cypress/"
+    ]
   }
 }
